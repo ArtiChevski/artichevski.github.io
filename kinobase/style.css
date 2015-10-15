@@ -1,0 +1,104 @@
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+body{
+	background: #282828;
+	font-family: tahoma, arial, sans-serif;
+	min-width: 1300px;
+}
+.container{
+	width: 1000px;
+}
+.logo{
+	margin-left: 192px;
+	margin-top: 10px;
+	float: left;
+}
+.upper-header{
+	background-image: url(images/header_bg.png);
+	background-repeat: repeat-x;
+	height: 36px;
+}
+.upper-header .text{
+	float: left;
+	color: #5d5c5c;
+	font-size: 10px;
+	position: relative;
+	top: 13px;
+	left: 11px;
+}
+.list{
+	list-style-type: none;
+	float: left;
+	position: relative;
+	left: 274px;
+}
+.list li{
+	float: left;
+	border-right: 1px solid #000
+
+}
+.list li:first-child{
+	border-left: 1px solid;
+}
+.list li a{
+	padding-right: 11px;
+	padding-left: 11px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: #5d5c5c;
+	text-decoration: none;
+	line-height: 12px;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow:0px 0px 3px rgba(0,0,0,.25);
+	height: inherit;
+	display: block;
+	box-shadow: inset 2px 0px 0px 0px rgba(0,0,0,.2), inset -2px 0px 0px 0px rgba(0,0,0,.2);
+}
+.lower-header{
+	background-image: url(images/header_bg_lower.png);
+	background-repeat: repeat-x;
+	height: 52px;
+}
+.decoration1{
+	position: relative;
+	z-index: 1;
+	left: 190px;
+	top: 28px;
+	float: left;
+}
+.lower-header .text{
+	color: white;
+	float: left;
+	position: absolute;
+	left: 230px;
+	top: 52px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.lower-header a{
+	text-decoration: none;
+	color: white;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.decoration2{
+	position: absolute;
+	z-index: 1;
+	left: 718px;
+	top:26px;
+	float: left;
+}
+.search{
+	float: left;
+	position: relative;
+	top: 10px;
+	left: 722px;
+	height: 30px;
+	width: 380px;
+	border-radius: 5px;
+
+}
