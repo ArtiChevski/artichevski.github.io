@@ -37,11 +37,20 @@ body{
 }
 .list li{
 	float: left;
-	border-right: 1px solid #000
-
+	
 }
-.list li:first-child{
-	border-left: 1px solid;
+.list li:before{
+	content: url(images/menuline.png);
+	float: left;
+	position: relative;
+	top: 0px;
+}
+.list li:last-child:after{
+	content: url(images/menuline.png);
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 473px;
 }
 .list li a{
 	padding-right: 11px;
@@ -56,7 +65,7 @@ body{
 	text-shadow:0px 0px 3px rgba(0,0,0,.25);
 	height: inherit;
 	display: block;
-	box-shadow: inset 2px 0px 0px 0px rgba(0,0,0,.2), inset -2px 0px 0px 0px rgba(0,0,0,.2);
+	
 }
 .lower-header{
 	background-image: url(images/header_bg_lower.png);
@@ -85,29 +94,60 @@ body{
 	margin-left: 5px;
 	margin-right: 5px;
 }
+.profile-wrapper{
+	position: relative;
+	top:10px;
+	left: 181px;
+	display: none;
+}
+.left-profile{
+	width: 35px;
+	height: 32px;
+	border: 1px solid black;
+	float: left;
+}
+.right-profile{
+	height: 32px;
+	width: 100px;
+	border: 1px solid black;
+	float: left;
+}
+
+.search-button{
+	background: url(images/button.png);
+	display: block;
+	width: 63px;
+	height: 50px;
+	position: relative;
+	float: left;
+	outline: none;
+	color: white;
+	left: 637px;
+	z-index: 4;
+}
 .searh-decor{
 	position: absolute;
 	z-index: 2;
 	left: 720px;
     top: 26px;
+    float: left;
 }
 .fake-search{
 	float: left;
-	position: relative;
-	top: 10px;
-	left: 722px;
+	position: absolute;
+	top: 43px;
+	left: 776px;
 	height: 30px;
 	width: 380px;
 	border-radius: 5px;
 	box-shadow: 2px 2px 4px 2px rgba(0,0,0,.2);
 	background: white;
-	
 }
 .search{
 	float: left;
-	position: absolute;
-	top: 45px;
-    left: 777px;
+	position: relative;
+	top: 7px;
+    left: 658px;
 	height: 30px;
 	width: 380px;
 	padding-left: 17px;
@@ -117,5 +157,14 @@ body{
 	border:none;
 	z-index: 3;
 	outline: none;
+}
+.wide-search{
+	color: white;
+	font-size: 10px;
+	position: relative;
+	top: 37px;
+	left: 490px;
+	float: left;
+	z-index: 4;
 }
 
