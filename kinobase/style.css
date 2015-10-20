@@ -85,14 +85,13 @@ body{
 	margin-left: 5px;
 	margin-right: 5px;
 }
-.decoration2{
+.searh-decor{
 	position: absolute;
-	z-index: 1;
-	left: 718px;
-	top:26px;
-	float: left;
+	z-index: 2;
+	left: 720px;
+    top: 25px;
 }
-.search{
+.fake-search{
 	float: left;
 	position: relative;
 	top: 10px;
@@ -100,5 +99,21 @@ body{
 	height: 30px;
 	width: 380px;
 	border-radius: 5px;
-
+	box-shadow: 2px 2px 4px 2px rgba(0,0,0,.2);
+	background: white;
+	
 }
+.search{
+	float: left;
+	position: absolute;
+	top: 45px;
+    left: 797px;
+	height: 30px;
+	width: 284px;
+	border-radius: 5px;
+	background: transparent;
+	border:none;
+	z-index: 3;
+	outline: none;
+}
+
