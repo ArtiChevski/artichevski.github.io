@@ -89,7 +89,7 @@ body{
 	position: absolute;
 	z-index: 2;
 	left: 720px;
-    top: 25px;
+    top: 26px;
 }
 .fake-search{
 	float: left;
@@ -107,9 +107,11 @@ body{
 	float: left;
 	position: absolute;
 	top: 45px;
-    left: 797px;
+    left: 777px;
 	height: 30px;
-	width: 284px;
+	width: 380px;
+	padding-left: 17px;
+	padding-right: 61px;
 	border-radius: 5px;
 	background: transparent;
 	border:none;
