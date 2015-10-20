@@ -45,7 +45,7 @@ header{
 	content: url(images/menuline.png);
 	float: left;
 	position: relative;
-	top: 0px;
+	bottom: 1px;
 }
 .list li a{
 	padding-right: 11px;
