@@ -117,21 +117,21 @@ header{
 	float: right;
 	outline: none;
 	color: white;
-	right: 416px;
+	right: -57px;
 }
 .search-decor{	
     float: right;
     position: relative;
     z-index: 2;
-    left: 70px;
-    bottom: 40px;
+    left: 5px;
+    bottom: 74px;
 }
 .fake-search{
 	float: right;
 	position: relative;
 	z-index: 1;
-	top: 10px;
-	left: 42px;
+	bottom: 24px;
+	left: 515px;
 	height: 30px;
 	width: 380px;
 	border-radius: 5px;
@@ -141,8 +141,8 @@ header{
 .search{
 	position: relative;
 	z-index: 3;
-	bottom: 24px;
-	left: 503px;
+	bottom: 54px;
+	left: 439px;
 	float: right;	
 	height: 30px;
 	width: 380px;
@@ -158,9 +158,8 @@ header{
 	z-index: 3;
 	color: white;
 	font-size: 10px;
-	float: right;	
-	left: 500px;
-	bottom: 26px;
+	left: 566px;
+	top: 32px;
 }
 .wide-search a{
 	margin-right: 0;
