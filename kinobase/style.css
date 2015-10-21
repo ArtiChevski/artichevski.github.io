@@ -4,9 +4,10 @@
 	border:0px;
 }
 body{
-	background: #282828;
+	background: #212121;
+	background-image: url(images/body_bg.png);
 	font-family: tahoma, arial, sans-serif;
-	min-width: 960px;
+	min-width: 1000px;
 }
 header{
 	background-image: url(images/bgpattern.png);
@@ -15,6 +16,8 @@ header{
 }
 .container{
 	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .logo{
 	float: left;
@@ -31,10 +34,7 @@ header{
 	font-size: 10px;
 }
 .upper-header{
-	height: 36px;
-	width:1000px;
-	margin-right: auto;
-	margin-left: auto;
+	height: 36px;	
 }
 .list{
 	position: relative;
@@ -185,5 +185,16 @@ header{
 .wide-search a{
 	text-decoration: none;
 	color: white;
+}
+.slider{
+	width: 100%;
+}
+.slider-header{
+	height: 38px;
+}
+.slider-bg{
+	width: 100%;
+	height: 287px;
+	background: rgba(0,0,0,.2);
 }
 
