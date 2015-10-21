@@ -6,6 +6,7 @@
 body{
 	background: #282828;
 	font-family: tahoma, arial, sans-serif;
+	min-width: 960px;
 }
 header{
 	background-image: url(images/bgpattern.png);
@@ -16,8 +17,18 @@ header{
 	width: 1000px;
 }
 .logo{
-	margin-top: 10px;
 	float: left;
+	margin-top: 10px;
+}
+.img-logo{
+	float: left;
+}
+.text-logo{
+	float: right;
+	margin-left: 10px;
+	margin-top: 4px;
+	color: #5d5c5c;
+	font-size: 10px;
 }
 .upper-header{
 	height: 36px;
@@ -25,27 +36,21 @@ header{
 	margin-right: auto;
 	margin-left: auto;
 }
-.upper-header .text{
-	float: left;
-	color: #5d5c5c;
-	font-size: 10px;
-	margin-top: 12px;
-	margin-left: 7px;
-}
 .list{
 	position: relative;
 	z-index: 10;
 	list-style-type: none;
 	float: right;
+	margin-right: 44px;
 }
 .list li{
-	float: left;	
+	float: left;
+	line-height: 12px;
 }
 .list li:before{
 	content: url(images/menuline.png);
 	float: left;
 	position: relative;
-	bottom: 1px;
 }
 .list li a{
 	padding-right: 11px;
@@ -74,25 +79,27 @@ header{
 	left: 1px;
 	top: 28px;
 }
-.lower-header .text{
+.authentication{
+	float: left;
+	width: 250px;
+	margin-left: -17px;
 	position: relative;
-	left: -17px;
+	z-index: 9999;
+}
+.account{
 	color: white;
 	float: left;
 	margin-top: 17px;
 	font-size: 14px;
 	font-weight: bold;
 }
-.lower-header a{
+.account a{
 	text-decoration: none;
 	color: white;
 	margin-left: 7px;
 	margin-right: 7px;
 }
 .profile-wrapper{
-	position: relative;
-	top:10px;
-	left: 181px;
 	display: none;
 }
 .left-profile{
@@ -105,33 +112,46 @@ header{
 	height: 32px;
 	width: 100px;
 	border: 1px solid black;
-	float: left;
+	float: right;
 }
-.search-button{
-	background: url(images/button.png);
-	position: relative;
-	z-index: 10;
-	display: block;
+.search-form{
+	float: right;
+	width: 492px;
+	height: inherit;
+	margin-right: 44px;
+}
+.search-button-bg{
+	float: left;
+	margin-left: 12px;
 	width: 64px;
 	height: 50px;
-	float: right;
+	background-image: url(images/button.png);
+	background-repeat: no-repeat;
+}
+.search-button{
+	background: transparent;
+	position: relative;
+	right: 58px;
+	z-index: 10;
+	display: block;
+	width: 54px;
+	height: 50px;
+	float: left;
 	outline: none;
 	color: white;
-	left: 58px;
 }
 .search-decor{	
-    float: right;
     position: relative;
     z-index: 2;
-    left: 5px;
-    bottom: 74px;
+    left: 36px;
+    bottom: 90px;
 }
 .fake-search{
 	float: right;
+	margin-right: 19px;
 	position: relative;
 	z-index: 1;
-	bottom: 24px;
-	left: 515px;
+	bottom: 39px;
 	height: 30px;
 	width: 380px;
 	border-radius: 5px;
@@ -141,8 +161,8 @@ header{
 .search{
 	position: relative;
 	z-index: 3;
-	bottom: 54px;
-	left: 439px;
+	margin-right: 19px;
+	bottom: 153px;
 	float: right;	
 	height: 30px;
 	width: 380px;
@@ -156,13 +176,14 @@ header{
 .wide-search{
 	position: relative;
 	z-index: 3;
+	float: right;
+	margin-right: 18px;
+	bottom: 154px;
 	color: white;
 	font-size: 10px;
-	left: 566px;
-	top: 32px;
 }
 .wide-search a{
-	margin-right: 0;
-	margin-left: 0;
+	text-decoration: none;
+	color: white;
 }
 
