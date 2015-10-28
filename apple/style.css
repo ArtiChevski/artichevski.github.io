@@ -9,7 +9,75 @@ body{
 	color:rgb(255,255,255);
 	font-family:'PF Agora Sans Pro',tahoma;
 }
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+.sprite-FB {
+    width: 47px;
+    height: 48px;
+    background-position: -5px -5px;
+}
+.sprite-arrow_left {
+    width: 36px;
+    height: 66px;
+    background-position: -62px -5px;
+}
 
+.sprite-arrow_right {
+    width: 36px;
+    height: 66px;
+    background-position: -108px -5px;
+}
+
+.sprite-design {
+    width: 45px;
+    height: 45px;
+    background-position: -154px -5px;
+}
+.sprite-item1 {
+    width: 111px;
+    height: 131px;
+    background-position: -209px -29px;
+}
+.sprite-item2 {
+    width: 118px;
+    height: 136px;
+    background-position: -5px -170px;
+}
+.sprite-item3 {
+    width: 112px;
+    height: 126px;
+    background-position: -133px -170px;
+}
+.sprite-logo {
+    width: 45px;
+    height: 45px;
+    background-position: -255px -170px;
+}
+.sprite-podarok {
+    width: 165px;
+    height: 134px;
+    background-position: -330px -60px;
+}
+.sprite-shtuka {
+    width: 38px;
+    height: 26px;
+    background-position: -154px -60px;
+}
+.sprite-tw {
+    width: 35px;
+    height: 34px;
+    background-position: -505px -60px;
+}
+.sprite-logo {
+    width: 230px;
+    height: 45px;
+    background-position: -330px -5px;
+    margin:49 0 0 49px;
+	float:left;
+}
 #header{
 	margin:0 auto;
 	border-bottom:1px solid #e0e0e0;
@@ -59,14 +127,10 @@ body{
 	margin-top: -30px;
 }
 .slideleft{
-	width: 36px;
-	height: 66px;
 	float: left;
 	margin:250 0 0 320px;
 }
 .slideright{
-	width: 36px;
-	height: 66px;
 	float:right;
 	margin: 250 320 0 0px;
 }
@@ -121,7 +185,6 @@ body{
 	color:#fff;
 }
 #products{
-	
 	height:187px;
 }
 
@@ -146,9 +209,6 @@ body{
 	color:#3f3f3f;
 	margin-top: 10px;
 	width: 120px;
-	
-	
-
 }
 .p1{
 	font-family: tahoma;
@@ -187,8 +247,7 @@ body{
 }
 .blockitem3{
 	height:150px;
-	width:259px;
-	
+	width:259px;	
 	margin-top: 25px;
 	float:left;
 
@@ -237,11 +296,6 @@ body{
 	margin-right: 50px;
 	margin-top: 40px;
 	
-}
-#akciya_cont .topic:after{
-	content: url(shtuka.png);
-	margin-left: 333px;
-
 }
 #akciya_cont .text{
 	font-size: 13px;
