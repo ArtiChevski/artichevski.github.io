@@ -24,13 +24,11 @@ body{
     height: 66px;
     background-position: -62px -5px;
 }
-
 .sprite-arrow_right {
     width: 36px;
     height: 66px;
     background-position: -108px -5px;
 }
-
 .sprite-design {
     width: 45px;
     height: 45px;
@@ -93,13 +91,10 @@ body{
 	margin-top: 5px;
 }
 #headcont li{
-	/*display:inline;*/
 	margin:51px 4px 0px 4px;
 	float:left;
-
 }
 #headcont li a{
-	
 	font-size: 18px;
 	color:#767676;
 	line-height: 19px;
@@ -111,6 +106,11 @@ body{
 	background: url(shadow.png);
 	background-size: 100% 38px;
 }
+#headcont li a:hover:after{
+	content: url(triangle.png);
+	position: relative;
+	bottom: 20px;
+}
 .img{
 	width:230px;
 	height:45px;
@@ -118,21 +118,22 @@ body{
 	float:left;
 }
 .arrows{
-	margin:0 auto;
+	position: absolute;
+	z-index: 10;
+	width: inherit;
 }
 #sort1{
-	
 	height: 523px;
 	position: relative;
 	margin-top: -30px;
 }
 .slideleft{
 	float: left;
-	margin:250 0 0 320px;
+	margin:250px 0px 0px -80px;
 }
 .slideright{
-	float:right;
-	margin: 250 320 0 0px;
+	float: right;
+	margin: 250px -80px 0px 0px;
 }
 .bigpicture{
 	background: url(sort1.png) no-repeat;
@@ -142,7 +143,6 @@ body{
 	top: -25px;
   	left: -24px;
   	bottom: -20px;
-  	
 }
 .bigpicture:hover:before{
 	background: #ddd
@@ -165,7 +165,6 @@ body{
 	padding-left: 50px;
 	padding-right: 50px;
 }
-
 .topic {
 	font-size: 36px;
 	font-family: 'PF Agora Sans Pro';
@@ -187,19 +186,40 @@ body{
 #products{
 	height:187px;
 }
-
-.blockitem1{
+.blockitem{
 	height: 140px;
-	width: 318px;
+	width: 276px;
 	margin-left: 50px;
 	margin-top: 30px;
 	float:left;	
 }
-.blockitem1 .topic{
-	font-size: 25px;
+.about-product{
+	width: 146px;
 	float: right;
-	margin-right: 60px;
-	margin-top: 10px;
+}
+.buy{
+	margin-top: 14px;
+	font-size: 14px;
+	color: #fff;
+	background: url(buy_bg.png) no-repeat;
+	width: 110px;
+    height: 26px;
+    display: block;
+}
+.buy p.price{
+	float: right;
+	margin-right: 10px;
+    margin-top: 5px;
+    margin-left: 0;
+}
+.buy p{
+	float: left;
+	margin-top: 5px;
+    margin-left: 18px;
+}
+
+.blockitem .topic{
+	font-size: 25px;
 	width:138px;
 }
 .h1{
@@ -215,16 +235,12 @@ body{
 	font-weight: normal;
 	color:#4b4b4b;
 	font-size: 13px;
-
 	width: 120px;
-	
 }
-.blockitem1 .text{
+.blockitem .text{
+	margin-top: 10px;
 	font-size: 13px;
-	margin-right: 60px;
-	float: right;
 	width: 138px;
-	
 }
 .blockitem2{
 	height:140px;
@@ -250,25 +266,21 @@ body{
 	width:259px;	
 	margin-top: 25px;
 	float:left;
-
 }
 .blockitem3 .topic{
 	font-size: 25px;
 	float: right;
-	
 	margin-top: 10px;
 	width:138px;
 }
 .blockitem3 .text{
 	font-size: 13px;
-	
 	float: right;
 	width: 138px;
 }
 .item1{
 	height: 131px;
 	width: 111px;
-	margin: 0 0 0 0px;
 	float:left;
 }
 .item2{
@@ -292,19 +304,16 @@ body{
 }
 #akciya_cont .topic{
 	font-size: 25px;
-	float: right;
+	float: left;
 	margin-right: 50px;
 	margin-top: 40px;
-	
 }
 #akciya_cont .text{
 	font-size: 13px;
 	margin-right: 132px;
-	float: right;
+	float: left;
 	width: 643px;
-	margin-top: 10px;
-	
-	
+	margin-top: 10px;	
 }
 .podveska{
 	width: 165px;
@@ -312,24 +321,20 @@ body{
 	float: left;
 	margin-top: 22px;
 	margin-left: 50px;
-
 }
 .shtuka{
 	width: 38px;
 	height: 26px;
 	float: right;
-	margin-right: 50px;
-
+	position: relative;
+	top: 42px;
 }
 #footer{
 	margin:0 auto;
 	background: rgb(248,248,248);
 }
 #footer_cont{
-	height: 122px;
-	
-	
-	
+	height: 122px;	
 }
 .designer{
 	width: 473px;
@@ -337,27 +342,23 @@ body{
 	float: left;
 }
 .designer .text{
-	
 	float: right;
 	margin-top: 55px;
 	width: 238px;
-	margin-right: 129px;
-	
+	margin-right: 129px;	
 }
 .design{
 	width: 45px;
 	height: 45px;
 	margin-top: 53px;
 	margin-left: 50px;
+	float: left;
 }
 .contacts{
 	width: 523px;
 	height: 122px;
 	float: right;
-
 }
-
-
 .contacts .text{
 	float: left;
 	width: 220px;
@@ -391,5 +392,4 @@ body{
 .container{
 	width:996px;
 	margin:0 auto;
-	
 }
